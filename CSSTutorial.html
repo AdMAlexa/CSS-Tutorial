@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial CSS</title>
+    <link rel="stylesheet" href="styleTutorial.css">
+    
+</head>
+<body>
+
+
+
+    <h1>Tutorial CSS</h1>
+    <h2>1. What is CSS </h2>
+    <p>
+        CSS sau <strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets il folosim pentru a stiliza<br>
+        pagina noastra web, practic ii spunem browserului cum sa prezinte utilizatorului documentul html. Deci, folosim CSS<br>
+        pentru a stiliza textul si alte elemente din documentul html, pentru a randa continutul, pentru a colora pagina<br>
+        web si asa mai departe.
+    </p>
+
+
+
+
+    <h2>2. CSS Inclusion (in HTML documents)</h2>
+    <p>
+        Metoda cea mai recomandata este sa folosim un fisier de still extern pentru a include CSS in documentul HTML.
+        Pentru aceasta, trebuie sa folosim elemntul &lt;link&gt; in cadrul elementului &lt;head&gt;
+    </p>
+    <img src="/media/exempluStyleFile.JPG" alt="exempluStyleFile">
+
+
+
+
+    <h2>3. CSS Syntax (Selector, property, value) </h2>
+    <p>Sintaxa CSS arata asa:</p>
+    <img src="/media/exempluSyntax.JPG" alt="exempluSyntax">
+    <p>Selector - folosim selectori pentru a selecta anumite elemente html aplicandule astfel un anumit set de reguli.</p>
+    <p>
+        property - este proprietatea selectorului sau cum dorim sa il stilizam.<br>
+        Pentru o lista lunga cu CSS property putem cauta documentatia pe google :)
+    </p>
+    <p>value - este valoare specifica fiecarei proprietati. </p>
+    <p>exemple <a href="/componente/CSSSyntax.html" target="_blank">CSS Syntax</a></p>
+
+
+
+
+    <h2>4. CSS Selectors (type, universal, descendant, id, class, child, attribute) </h2>
+    <p>
+        Folosim selectori pentru a selecta anumite elemente pentru a le stiliza.
+    </p>
+    <p>Putem imparti CSS Selectors in 6 categorii:</p>
+        <dl>
+            <dt>1. Universal Selector</dt>
+            <dd>Selecteaza toate elementele</dd>
+
+            <dt>2. Simple selector</dt>
+            <dd>selecteaza elemente in functie de element HTml, id si clasa.</dd>
+    
+            <dt>3. Combinator selectors</dt>
+            <dd> selecteaza elemente pe baza unei relatii specifice intre ele.</dd>
+    
+            <dt>4. Pseudo-class selectors</dt>
+            <dd>selecteaza elementele care se afla intr-o anumita stare.</dd>
+
+            <dt>5. Pseudo-elements selectors</dt>
+            <dd>selecteaza si aplica stil unei parti a elementului.</dd>
+
+            <dt>6. Attribute selectors</dt>
+            <dd>selecteaza elemente pe baza unui atribut sau a valorii unui atribut.</dd>
+        </dl>
+    <p>exemple <a href="/componente/CSSSelectors.html" target="_blank">CSS Selectors</a></p>
+
+
+
+
+    <h2>5. CSS Measurement units (inches, pixels, points, rem, em, percent, vw, vh, vmin, vmax ) </h2>
+
+    <p>
+        O unitate CSS determina dimensiunea unui element sau a continutului acestiua in browserul nostru.<br> 
+        Exista doua tipuri de unitati: absolute si relative.
+    </p>
+    <ol>
+        <li>
+            Unitatile absolute: sunt unitati cu o masura fixa de aceea sunt mai putin folosite deoarece acestea<br>
+            nu scaleaza atunci cand dimensiunea ectranului se modifica.
+            <ul>
+                <li> px(pixels): mai sunt si alte unitati absolute dar "px" este cea mai folosita unitate absoluta pentru ecrane.</li>
+                <li>in(inches): 1in = 96px (depinde de densitatea ecranelor)</li>
+                <li>pt(points): 1in = 72pt</li>
+            </ul>
+        </li>
+        <li>
+            Unitatile relative: specifica o lungime relativa la o alta proprietate de lungime. Unitatile relative sunt utile<br>
+            pentru modelarea site-urilor receptive, deoarece se scaleaza in raport cu dimensiunea parinte sau fereastra.
+            <ul>
+                <li>rem: unitatea rem este relativa la font-size-ul elementului radacina adica &lt;html&gt; </li>
+                <li>em: unitatea em este relativa la font-size-ul in care este elementul (adica 2em este de 2 ori mai mare decat font-ul curent) </li>
+                <li>% (percent): unitatea % este relativ la elementul parinte</li>
+                <li>vw: este relativ cu 1% din latimea ferestrei de vizualizare</li>
+                <li>vh: este relativ cu 1% din inaltimea ferestrei de vizualizare</li>
+                <li>vmin: este relativ cu 1% din dimensiunea mai mica a ferestrei de vizualizare</li>
+                <li>vmax: este relativ cu 1% din dimensiunea mai mare a ferestrei de vizualizare</li>
+            </ul>
+        </li>
+    </ol>
+    
+    <p>exemple <a href="/componente/Units.html" target="_blank">CSS Measurement units</a></p>
+
+
+
+
+    <h2>6. CSS Colors and Backgrounds</h2>
+
+    <h3>CSS Colors</h3>
+    <p>
+        La fel cum am prezentat si in tutorialul de HTML, culorile pot fi specificate cu nume de culori sau cu valori<br>
+        RGB, RGBA, HEX, HSL si HSLA, dar de data acestea le puteam specifica ca si set de reguli din fisierul css.
+    </p>
+    <h3>CSS Backgrounds</h3>
+    <p>Proprietatile CSS Backgrounds sunt folosite pentru a adauga efecte de fundal pentru elemente.</p>
+    <p>CSS Background are urmatoarele proprietati:</p>
+    <ul>
+        <li>
+            <dt>background-color:</dt>
+            <dd>seteaza culoarea de fundal a unui element.</dd>
+        </li>
+        <li>
+            <dt>background-image:</dt>
+            <dd>seteaza o imagine ca fundal al unui element.</dd>
+        </li>
+        <li><dt>background-origin:</dt>
+            <dd>specifica pozitia de origine (zona de pozitionare a fundalului) a unei imagini de fundal.</dd>
+        </li>
+        <li><dt>background-position:</dt>
+            <dd>setează pozitia initială pentru fiecare imagine de fundal. Pozitia este relativa la stratul de pozitie stabilit de background-origin.</dd>
+        </li>
+        <li><dt>background-repeat:</dt>
+            <dd>repeta o imagine atat pe orizontala, cat si pe verticala.</dd>
+        </li>
+        <li><dt>background-size:</dt>
+            <dd>specifica dimensiunea imaginilor de fundal.</dd>
+        </li>
+        <li><dt>background-clip:</dt>
+            <dd>ne permite sa controlam cat de mult se extinde o culoare/imagine de fundal dincolo de continutul unui element.</dd>
+        </li>
+        <li><dt>background-attachment:</dt>
+            <dd>stabileste daca pozitia unei imagini de fundal este fixa in fereastra de vizualizare sau deruleaza cu blocul care o contine.</dd>
+        </li>
+        <li><dt>backround-blend-mode:</dt>
+            <dd>defineste modul in care imaginea de fundal a unui element ar trebui sa se imbine cu culoarea de fundal:</dd>
+        </li>
+        <li><dt>background Shorthand:</dt>
+            <dd>
+                proprietatea shorthand ne permite sa scurtam codul prin a specifica toate proprietatile de fundal la un loc.<br>
+                Cand folosim proprietatea shorthand ordinea valorilor proprietatii este:
+                <ol>
+                    <li>background-color</li>
+                    <li>background-image</li>
+                    <li>background-position</li>
+                    <li>background-size</li>
+                    <li>background-repeat</li>
+                    <li>background-attachment</li>
+                    <li>background-origin</li>
+                    <li>background-clip</li>
+                    <li>initial: seteaza aceasta proprietate la valoarea implicita. / inherit: mosteneste proprietate din elementul parinte.</li>
+                </ol>
+            </dd>
+        </li>
+    </ul>
+    <p>exemple <a href="/componente/Backgrounds.html" target="_blank">CSS Backgrounds</a></p>
+
+
+
+    <h2>7. CSS Text and Fonts</h2>
+
+    <h3>CSS Text</h3>
+    <p>
+        Stilizarea textului in CSS este ceva pe care il vom face destul de des, deoarece majoritatea continutului de pe o <br>
+        pagina web este in text. <br>
+        Din fericire, CSS are o multime de proprietati pentru formatarea textului.
+    </p>
+    <p>Ne vom uita la urmatoarele proprietati pentru formatarea textului:</p>
+    <ul>
+        <li>
+            <dt>text color</dt>
+            <dd>- este folosit pentru a seta culoarea unui text.</dd>
+        </li>
+        <li>
+            <dt>text-align</dt>
+            <dd>- este folosit pentru a alinia textul unui document.</dd>
+        </li>
+        <li>
+            <dt>text-align-last</dt>
+            <dd>- este folosit pentru a specifica modul in care se aliniaza ultima linie a unui text.</dd>
+        </li>
+        <li>
+            <dt>text-decoration</dt>
+            <dd>- este folosit pentru a specifica decorul adaugat textului: underline, overline, strikethrough </dd>
+        </li>
+        <li>
+            <dt>text-transform</dt>
+            <dd>este folosit pentru a specifica litere mari si mici intr-un text.</dd>
+        </li>
+        <li>
+            <dt>text-indent</dt>
+            <dd>- este folosit pentru a indenta prima linie dintr-un bloc de text.</dd>
+        </li>
+        <li>
+            <dt>text-justify</dt>
+            <dd>- este folosit pentru a specifica metoda de justificare a textului cand text-align este setat la „justify”.</dd>
+        </li>
+        <li>
+            <dt>text-orientation</dt>
+            <dd>
+                - seteaza orientarea caracterelor textului intr-o linie.<br>
+                Afecteaza doar textul in modul vertical "writing-mode: vertical-rl;".
+            </dd>
+        </li>
+        <li>
+            <dt>text-shadow</dt>
+            <dd>este folosit pentru a adauga umbra textului.</dd>
+        </li>
+        <li>
+            <dt>text-overflow</dt>
+            <dd>este folosit pentru a specifica modul in care continutul depasit care nu este afisat ar trebui sa fie semnalat utilizatorului.</dd>
+        </li>
+        <li>
+            <dt>text-transform</dt>
+            <dd>este folosit pentru a specifica litere mari si mici într-un text.</dd>
+        </li>
+        <li>
+            <dt>line-hight</dt>
+            <dd>este folosit pentru a specifica inaltimea unei linii.</dd>
+        </li>
+        <li>
+            <dt>letter-spacing</dt>
+            <dd>este folosit pentru a adauga sau scadea spatiu intre literele care alcatuiesc un cuvant.</dd>
+        </li>
+        <li>
+            <dt>word-spacing</dt>
+            <dd>este folosit pentru a adauga sau scadea spatiu intre cuvintele unei propozitii.</dd>
+        </li>
+        <li>
+            <dt>direction</dt>
+            <dd>este folosit pentru a seta directia textului.</dd>
+        </li> 
+    </ul>
+
+    <h3>CSS Fonts</h3>
+
+    <p>Este important sa folosim un font usor de citit si unul care sa creeze un identitate puternica contentului</p>
+    <p>Ne vom uita la urmatoarele proprietati ale fontului:</p>
+    <ul>
+        <li>
+            <dt>font-family</dt>
+            <dd>este folosit pentru a specifica fontul unui text.<br>
+                Proprietatea font-family ar trebui sa detina mai multe nume de fonturi ca <br>
+                si backup pentru a asigura compatibilitatea intre browsere sau sisteme de operare.
+            </dd>
+        </li>
+        <li>
+            <dt>font-size</dt>
+            <dd>este folosit pentru a seta dimensiunea textului.</dd>
+        </li>
+        <li>
+            <dt>font-weight</dt>
+            <dd>este utilizat pentru a seta cat de groas sau subtire ar trebui sa fie afisate caracterele din text.</dd>
+        </li>
+        <li>
+            <dt>font-style</dt>
+            <dd>este folosit pentru a specifica stilul fontului pentru un text.</dd>
+        </li>
+    </ul>
+    <p>
+        O modalitate foarte convenabila si usoara de a adauga fonturi web pe site-ul nostru sunt <a href="https://fonts.google.com/"  target="_blank"><img src="/media/googlefonts.JPG" alt="" style="height: 25px; width: 95px;"></a><br>
+        Google Fonts este principala gazda de fonturi open-source pentru utilizare pe web cu sute de <br>
+        font-family disponibile pentru a include in pagina noastra web.
+    </p>
+
+    <p>exemple <a href="/componente/TextAndFonts.html" target="_blank">CSS Text and Fonts</a></p>
+
+    <h2>8. CSS Images</h2>
+
+    <p>Imaginile sunt o parte importatnta intr-o pagina web iar CSS ne ajuta la afisarea acestora.</p>
+
+    <p>Ne vom uita la urmatoarele metode de a stiliza o imagine:</p>
+
+    <ul>
+        <li>
+            <dt>Backgroung image</dt>
+            <dd>este folosit pentru a specifica o imagine de utilizat ca fundal al unui element.</dd>
+        </li>
+        <li>
+            <dt>Rounded corner image</dt>
+            <dd>cu proprietatea CSS border-radius, putem da oricarui element colturi rotunjite.</dd>
+        </li>
+        <li>
+            <dt>Rounded image </dt>
+            <dd>folosind proprietatea CSS border-radius: 50%; face imaginea rotunda:</dd>
+        </li>
+        <li>
+            <dt>Link as Thumbnail image</dt>
+            <dd>este recunoscuta cu un chenar in jurul sau iar pentru ca aceasta sa se comporte ca si un Link folosim elementul &lt; a &gt;</dd>
+        </li>
+        <li>
+            <dt>Text on images</dt>
+            <dd>putem centra textul pe o imagine putem folosi &lt; div  &gt; impreuna cu cateva priprietati de positionare. </dd>
+        </li>
+        <li>
+            <dt>Responsive image</dt>
+            <dd>imaginile se vor ajusta automat pentru a se potrivi cu dimensiunea ecranului acest lucru il putem observa in pagina cu exemple</dd>
+        </li>
+        <li>
+            <dt>Center an image</dt>
+            <dd>pentru a centra o imagine putem folosi display:flex sau alte metode ca ce din pagina cu exemple.</dd>
+        </li>
+        <li>
+            <dt>Cards</dt>
+            <dd>
+                cardurile pot avea un titlu, o imagine, continut si un subsol. Fiecare card ar trebui sa aiba<br>
+                aceeasi inaltime, iar subsolurile trebuie sa se lipeasca de partea de jos a cardului.
+            </dd>
+        </li>
+        <li>
+            <dt>Transparent image</dt>
+            <dd>folosim proprietatea opacity pentru a specifica transparenaa unui element si poate lua o valoare de la 0,0 - 1.</dd>
+        </li>
+        <li>
+            <dt>Filters on image</dt>
+            <dd>folosim proprietatea filter pentru a crea efecte specifice vizuale pentru o imagine </dd>
+        </li>
+        <li>
+            <dt>Flip an Image</dt>
+            <dd>putem rasturna sau reorinta o imagine prin proprietatea ransform: scale();</dd>
+        </li>
+        <li>
+            <dt>Image Hover Overlay</dt>
+            <dd>pentru a crea acest lucru avem nevoie de cateva proprietati mai avansate
+                <ul>
+                    <li>
+                        <dt>CSS Transitions</dt>
+                        <dd>ne permite sa modificam valorile proprietatilor pentru o anumita durata.</dd>
+                    </li>
+                    <li>
+                        <dt>CSS Transform </dt>
+                        <dd>ne permite sa rotim, sa scalam, sa inclinam sau sa traducem un element.</dd>
+                    </li>
+                </ul>
+            </dd>
+        </li>
+    </ul>
+
+    <p>exemple <a href="/componente/CSSImages.html" target="_blank">CSS Images</a></p>
+
+
+    <h2>9. CSS Links</h2>
+    <p>Folosind CSS, Link-urile pot fi stilizate in mai multe moduri diferite. </p>
+    <ul>
+        <li>link text implicit</li>
+        <li>link text stilizat</li>
+        <li>link buton implicit</li>
+        <li>link buton stilizat</li>
+    </ul>
+    <p>Linkurile pot fi stilizate in mode diferit, in functie de starea in care se afla.</p>
+
+    <p>Cele patru stari sunt:</p>
+    <ol>
+        <li>a:link - un link normal, nevizitat</li>
+        <li>a:visited - un link pe care utilizatorul l-a vizitat</li>
+        <li>a:hover - un link atunci cand user-ul trece mouse-ul peste el</li>
+        <li>a:active - un link in momentul in care se face clic pe acesta</li>
+    </ol>
+
+    <p>exemple <a href="/componente/CSSLinks.html" target="_blank">CSS Links</a></p>
+
+
+    <h2>10. CSS Tables</h2>
+
+    <p>Elementul &lt; table &gt; este folosit pentru afisarea datelor in randuri si coloane.</p>
+    <p>Tabelul este usor de stilizat datorita caracteristicilor bine definite precum:</p>
+    <ul>
+        <li>&lt; table &gt;</li>
+        <li>&lt; caption &gt;</li>
+        <li>&lt; thead &gt;</li>
+        <li>&lt; tr &gt;</li>
+        <li>&lt; th  &gt;</li>
+        <li>&lt; tbody &gt;</li>
+        <li>&lt; td &gt;</li>
+        <li>&lt; tfoot &gt;</li>
+    </ul>
+    <p>In exemplu ne vom uita la cateva proprietati care vor aduga un stil specific tabelului cum ar fi: borders, size, alignment, color, style and responsive</p>
+    <p>exemple <a href="/componente/CSSTables.html" target="_blank">CSS Tables</a></p>
+    
+
+    <h2>11. CSS Borders, Margins and Padding </h2>
+    <p>Toate elementele HTML pot fi considerate cutii.</p>
+    <p>O cutie poate infasura fiecare element html prin:</p>
+    <div class="boxFlex">
+        <ul>
+            <li>Margin - este trasparenta si este zona din afara chenarului(border). </li>
+            <li>Border - chenarul inconjoara padding-ul si continut(content) </li>
+            <li>Padding - este zona ce inconjoara cotinutului </li>
+            <li>Content - continutul cutii este zona ende avem: text, imagini </li>
+    
+        </ul>
+        <img src="/media/boxStyle.JPG" alt="">
+    </div>
+    
+
+
+    <p>exemple <a href="/componente/CSSBoMaPa.html" target="_blank">CSS Borders, Margins and Padding</a></p>
+
+
+    <h2>12. CSS Cursors </h2>
+    <p>
+        Cursoarele sunt atunci cand luam mouse-ul si il mutam peste diferite lucruri de pe pagina.<br>
+        Apoi observam ca in mod implicit atunci cand mutam mouse-ul peste un link, acesta se schimba din sageata in mana (pointer).
+    </p>
+
+    <p>exemple <a href="/componente/CSSCursors.html" target="_blank">CSS Cursors</a></p>
+
+    <h2>13. CSS Dimension (height, width, max-height, max-width) </h2>
+
+    <p>Am vazut ca fiecare cutie/element este inconjurat de o zona specifica: margin, border, padding</p>
+    <p>Astfel urmatoarele proprietati ne permit sa controlam dimensiunile unei cutii.</p>
+    <ol>
+        <li>
+            <dt>height </dt>
+            <dd> este utilizata pentru a seta inaltimea unei cutii.
+            </dd> 
+        </li>
+        <li>
+            <dt>width </dt>
+            <dd> este folosita pentru a seta latimea unei cutii.</dd> 
+        </li>
+        <li>
+            <dt>max-height</dt>
+            <dd>este utilizata pentru a seta o inaltime maxima pe care o poate avea o cutie.</dd> 
+        </li>
+        <li>
+            <dt> min-height</dt>
+            <dd> este folosita pentru a seta inaltimea minima pe care o poate avea o cutie.</dd> 
+        </li>
+        <li>
+            <dt> max-width</dt>
+            <dd> este utilizata pentru a seta latimea maxima pe care o poate avea o cutie.</dd> 
+        </li>
+        <li>
+            <dt>min-width</dt>
+            <dd>este folosita pentru a seta latimea minima pe care o poate avea o cuitie.</dd> 
+        </li>
+    </ol>
+    
+    <p>exemple <a href="/componente/CSSDimension.html" target="_blank">CSS Dimension (height, width, max-height, max-width)</a></p>
+
+    <h2>14. CSS Scrollbars (Overflow) </h2>
+
+    <p>
+        Aceasta proprietate specifica daca se decupeaza continutul sau daca se adauga scrollbar atunci cand continutul<br>
+        unui element este prea mare pentru a se incadra intr-o zona specificata.
+    </p>
+
+    <p>exemplu <a href="/componente/CSSScrollbars.html" target="_blank">CSS Scrollbars (Overflow)</a></p>
+
+    <h2>15. CSS Visibility </h2>
+
+    <p>Proprietatea Visibility specifica daca un element este sau nu vizibil.</p>
+
+    <p>exemple <a href="/componente/CSSVisibility.html" target="_blank">CSS Visibility</a></p>
+
+    <h2>16. CSS Positioning </h2>
+
+    <P>Proprietatea position specifica tipul de metoda de pozitionare utilizata pentru un element bloc.</P>
+    
+    <p>Exista cinci valori diferite de pozitie:</p> 
+
+    <ol>
+        <li>
+            <dt>static</dt>
+            <dd>aceasta positie vine in mod implicit si este intotdeauna pozitionata conform fluxului normal al paginii web.</dd>
+        </li>
+        <li>
+            <dt>relative</dt>
+            <dd>un element cu poziție "relative" este pozitionat fata de pozitia sa normala prin setarea proprietatilor: top, right, bottom, left</dd>
+        </li>
+        <li>
+            <dt>absolute</dt>
+            <dd>un element cu poziție "absolute" este pozitionat relativ la cel mai apropiat parinte cu pozitie "relative"</dd>
+        </li>
+        <li>
+            <dt>fixed</dt>
+            <dd>este pozitionat relative fata de fereastra web(viewport), astfel va ramane intotdeauna in acelasi loc chiar daca pagina este glisata .</dd>
+        </li>
+        <li>
+            <dt>sticky</dt>
+            <dd>acesta se comporta ca si poszitia "fixed" doar ca este pozitionat pe baza pozitiei de glisare a utilizatorului.</dd>
+        </li>
+    </ol>
+
+    <p>exemplu <a href="/componente/CSSPositioning.html" target="_blank">CSS Positioning</a></p>
+
+    <h2>17. CSS Layers (z-index)</h2>
+    <p>Proprietatea z-index este utilizata impreuna cu proprietatea position pentru a crea un efect de straturi. Putem specifica ce element ar<br>
+         trebui sa apara deasupra si ce element sa apara in jos.
+        <ul>
+            <li>z-index functioneaza numai pe elementele pozitionate</li>
+            <li>daca doua elemente pozitionate se suprapun fara sa fie specificat<br>
+                un z-index atunci elementul pozitionat ultimul in codul html va fi afisat deasupra</li>
+        </ul>
+    </p>
+
+    <p>exemplu <a href="/componente/CSSZindex.html" target="_blank">CSS Layers (z-index)</a></p>
+
+    <h2>18. CSS Pseudo-Classes and Pseudo-Elements </h2>
+
+    <div class="boxFlex">
+        <p>Pseudo-Classes sunt folosite pentru a stiliza<br>
+            anumite elemente atunci cand sunt intr-o stare particulara.</p>
+        <img src="/media/pseudoClassCss.JPG" alt="">
+    </div>
+
+    <div class="boxFlex">
+        <p>Pseudo-Elements este folosit pentru a stila partile<br>
+            specificate ale unui element cum ar fi sa inseram un <br>
+            continut inainte sau dupa continutul unui element.</p>
+       <img src="/media/pseudoElemCss.JPG" alt="">
+    </div>
+
+    <p>exemplu <a href="/componente/CSSPseudo.html" target="_blank"> CSS Pseudo-Classes and Pseudo-Elements </a></p>
+
+    <h2>19. CSS @Rules </h2>
+    <p>CSS @Rules sunt foarte practice in ceea ce priveste spunerea CSS-ului cum sa se comporte.<br>
+        Exista mai multe dintre aceste reguli, cum ar fi:</p>
+    <ul>
+        <li>
+            <dt>@charset</dt>
+            <dd>Regula @charset trebuie sa fie primul element din foaia de stil si sa nu fie precedata de niciun caracter. <br>
+                Daca sunt definite mai multe reguli @charset, este folosita doar prima.<br>
+                Acest lucru este util in cazul in care encoding-ul nu este declarat in meta tag-ul header-ului.
+            </dd>
+        </li>
+        <li>
+            <dt>@document</dt>
+            <dd>Regula @document este folosita pentru a specifica un set de stiluri care vor fi aplicate numai unor anumite<br>
+                pagini ale unui site web care au o adresa URL pe care o specificam.</dd>
+        </li>
+        <li>
+            <dt>@font-face</dt>
+            <dd>Regula @font-face este folosita pentru a asocia un nume de font care poate fi folosit intr-o foaie de stil.<br>
+                Acesta poate fi folosita cu fonturi descarcate local iar in file CSS vom utiliza o descriere<br>
+                font-family:'' si un src: url(/locatia fonturilor descarcate).
+            </dd>
+        </li>
+        <li>
+            <dt>@import</dt>
+            <dd>Regula @import este folosita pentru a importa reguli de stil astfel avem:
+                <ul>
+                    <li>@import reguli css dintr-un alt fisier css <img src="/media/ATimportstyleSheet.JPG" alt=""></li>
+                    <li>@import regli css dintr-un URL <img src="/media/ATimportFonts.JPG" alt=""></li>
+                    <li>@import media queries dependent de fisierul css curent <img src="/media/ATimportMediaquerry.JPG" alt=""></li>
+                </ul>
+            </dd>
+        </li>
+        <li>
+            <dt>@keyframes</dt>
+            <dd>determina ce stiluri va avea un element la un moment dat. @keyframes sunt responsabile pentru controlul etapelor<br>
+                 intermediare ale animatiei, de asemenea, permite un control mai mare al progresului unei animatii.</dd>
+        </li>
+        <li>
+            <dt>@media</dt>
+            <dd>regula @media este folosiota pentru a ajusta designul web pentru a se potrivi cu dispozitivele utilizatorilor</dd>
+        </li>
+        <li>
+            <dt>@namespace</dt>
+            <dd>poate fi folosit pentru a defini spatiul de nume implicit pentru foaia de stil. Cand este definit un spatiu de nume<br>
+                 implicit, toti selectorii de tip si universali se aplica numai elementelor din acel spatiu de nume.</dd>
+        </li>
+        <li>
+            <dt>@page</dt>
+            <dd>este folosita pentru a modifica unele proprietati CSS la printarea unui pagini web.</dd>
+        </li>
+        <li>
+            <dt>@supports</dt>
+            <dd>este folosit pentru a testa disponibilitatea anumitor caracteristici CSS in interiorul unui browser in CSS,<br>
+                adica facem detectarea caracteristicilor in cadrul css-ului</dd>
+        </li>
+    </ul>
+
+    <p>exemplu <a href="/componente/AtRules.html" target="_blank"> CSS @Rules </a></p>
+
+    
+    <h2>20. CSS Media Types </h2>
+    <p>Ne permit sa decidem cum ar trebui sa arate o pagina, in functie de tipul de media utilizat pentru afisarea paginii</p>
+    <ul>
+        <li>
+            <dt>@media all</dt>
+            <dd>
+                in cele mai multe cazuri, @media all este utilizat in mod implicit @media atunci cand nu este specificat<br>
+                niciun alt tip sau opeator. 
+            </dd>
+        </li>
+        <li>
+            <dt>@media screen</dt>
+            <dd>destinat in principal pentru ecran PC, leptop, tableta, smart-phones ...</dd>
+        </li>
+        <li>
+            <dt>@media print</dt>
+            <dd>folosit pentru documentele care sunt vizualizate pe un ecran in modul de previzualizare la imprimare.<br>
+                Exemplu, daca vrem sa economisim culoarea la printare putem avea regula de mai jos:<br>
+                <img src="/media/ATmediaPrint.JPG" alt="">
+
+            </dd>
+        </li>
+        <li>
+            <dt>@media type aural braille handheld</dt>
+            <dd>
+                Note: CSS2.1 si Media Queries 3 au definit mai multe tipuri de media suplimentare<br>
+                (tty, tv, projection, handheld, braille, embossed, and aural), dar au fost depreciate<br>
+                in Media Queries 4 si nu ar trebui sa fie folosite.
+            </dd>
+        </li>
+    </ul>
+
+    <h2>21. CSS Layouts </h2>
+
+    <p>
+        Exista o multime de modele de CSS layouts diferite din care sa alegem.<br>
+        Cu toate acestea, am realizat o simpla structura mai jos pentru a arunca<br>
+        o privire la ideea de layout.
+    </p>
+    
+    <p>exemplu <a href="/componente/CSSLayouts.html" target="_blank"> CSS Layouts </a></p>
+
+    <h2>22. CSS Validations</h2>
+
+    <p>
+        CSS Validation este un instrument care ne permite sa gasim erori si avertismente<br>
+        care ar trebui remediate in fisierul nostru CSS.<br>
+        Putem sa verificam/validam un fisier css pe link-ul de mai jos<br>
+        <a href="https://jigsaw.w3.org/css-validator/validator.html.en" target="_blank">https://jigsaw.w3.org/css-validator/validator.html.en</a> 
+    </p>
+
+
+</body>
+</html>

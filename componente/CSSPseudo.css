@@ -1,0 +1,167 @@
+
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+/****************************************************************************************/
+
+
+body {
+    background-color: bisque;
+    font-size: 20px;
+}
+h1 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+
+/****************************************************************************************/
+
+
+/** exemple de Pseudo-Classes **/
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+
+div {
+    position: relative;
+}
+
+.link {
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    transform: translate( 0, -50%);
+}
+
+
+
+button {
+    height: 40px;
+    width: 200px;
+    border-radius: 20px 20px 20px 20px;
+}
+button:hover {
+    background-color: red;
+    color: white;
+    box-shadow: 0px 0px 15px 15px rgba(214, 63, 63, 0.466);
+}
+button:focus {
+    background-color: grey;
+    color: #000;
+}
+
+
+
+
+.thumbnailImage {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    border: 5px solid #ffffff;
+}
+.thumbnailImage:hover {
+    box-shadow: 0px 0px 15px greenyellow, 0px 0px 20px greenyellow, 0px 0px 30px greenyellow;
+}
+
+
+
+/****************************************************************************************/
+
+
+
+/** exemple de Pseudo-Elements **/
+.cutie {
+    margin-left: 1.2em;
+    width: 90%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    border: 0.5em ridge ;
+}
+p {
+    border: 1px solid ;
+}
+
+p::before {
+    content: 'continut before::';
+    background: lightskyblue;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.5em;
+}
+p::after {
+    content: 'continut after::';
+    background: lightcoral;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    font-size: 0.5em;
+}
+
+/****************************************************************************************/
+
+
+/** alt exemplu **/
+.cutieAlt {
+    margin-left: 1.2em;
+    width: 90%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border: 0.5em ridge ;
+}
+.para1 {
+    border: 1px solid ;
+    background: #ffffff;
+}
+
+.para1::before {
+    content:url(/media/arataDreapta.png);
+    background: none;
+    display: inline;
+    vertical-align: middle;
+}
+.para1::after {
+    content: url(/media/arataStanga.png);
+    background: none;
+    display: inline;
+    vertical-align: middle;
+}
+
+.toolink[data-tool-tip] {
+    position: relative;
+}
+.toolink[data-tool-tip]::after {
+    content: attr(data-tool-tip);
+    display: block;
+    position: absolute;
+    background-color: lightcyan;
+    padding: 0.5em 1.5em;
+    border-radius: 10px;
+    border: 1px solid;
+    opacity: 0;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+.toolink[data-tool-tip]:hover::after {
+    opacity: 0.8;
+}
+

@@ -1,0 +1,345 @@
+
+/** Backgroung image **/ 
+body {
+    color: #ffebcd;
+    text-shadow: 0px 0px 15px greenyellow, 0px 0px 20px greenyellow, 0px 0px 30px greenyellow;
+    font-size: 20px;
+    background-image: url(/media/theEye.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+
+/**************************************************************************/
+
+
+h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+img {
+    border: 5px solid #ffffff;
+}
+
+
+/**************************************************************************/
+
+/** Rounded corner images **/
+.RoundedCorner {
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.container > div {
+    margin: 10px;
+    padding: 20px;
+}
+    
+
+/**************************************************************************/
+
+
+
+/**  Rounded image **/
+.roundedImage {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+
+
+/**************************************************************************/
+
+
+
+/** Link as Thumbnail image **/
+.thumbnailImage {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+.thumbnailImage:hover {
+    box-shadow: 0px 0px 15px greenyellow, 0px 0px 20px greenyellow, 0px 0px 30px greenyellow;
+}
+
+
+
+/**************************************************************************/
+
+
+
+/** Text on images **/
+.TextOnImage {
+    width: 50%;
+    height: auto;
+    position: relative;
+}
+.TextOnImage > img {
+    width: 100%;
+    height: 100%;
+}
+.stangaSus {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-weight: 900;
+    font-size: 3vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: #ffebcd;;
+    -webkit-text-stroke-width: 1px;
+    
+} 
+.dreaptaSus {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-weight: 900;
+    font-size: 3vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: #ffebcd;;
+    -webkit-text-stroke-width: 1px;
+}
+.dreaptaJos {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-weight: 900;
+    font-size: 3vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: #ffebcd;;
+    -webkit-text-stroke-width: 1px;
+}
+.stangaJos {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-weight: 900;
+    font-size: 3vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: #ffebcd;;
+    -webkit-text-stroke-width: 1px;
+}
+.textCentru {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+    font-size: 3vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: #ffebcd;;
+    -webkit-text-stroke-width: 1px;
+}
+
+
+
+/**************************************************************************/
+
+
+
+/** Responsive image **/
+.resposiveImage {
+    display: block;
+    border: 0;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    opacity: 0.6;
+    width: 93%;
+    height: auto;
+    box-shadow: 0px 0px 15px 8px black, 0px 0px 20px black, 0px 0px 25px black;
+}
+
+
+
+/**************************************************************************/
+
+
+
+/** Center an image **/
+.CenerImage {
+    height: 300px;
+    width: 100vw;
+    text-align: center;
+}
+.CenerImage > img {
+    display: block;
+    position: relative;
+    height: 100%;
+    border: 0;
+    border-radius: 50%;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    box-shadow: 0px 0px 15px 8px black, 0px 0px 20px black, 0px 0px 25px black;
+}
+
+
+
+/**************************************************************************/
+
+
+
+/** Cards **/ 
+.cardFlex {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.cards {
+
+    box-shadow: 0 0 5px 0 greenyellow;
+    transition: 0.3s;
+    position: relative;
+    width: 20%;
+    background-color: white;
+}
+.cards:hover {
+    box-shadow: 0 0px 16px 2px greenyellow, 0 0px 22px 5px rgb(47, 196, 255);
+}
+.cards > img {
+    border: 0;
+    display: block;
+    width: 100%;
+    height: 75%;
+}
+
+.CardText  {
+    padding: 5px 5px;
+    text-align: center;
+    color: black;
+}
+
+
+
+/**************************************************************************/
+
+
+
+/** Transparent image **/
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: blue;
+    text-shadow: 1px 1px 20px rgb(47, 196, 255), 1px 1px 30px rgb(47, 196, 255);
+}
+
+a:focus {
+    color: #000;
+}
+
+
+
+/**************************************************************************/
+
+
+
+/** Filters on image **/
+table {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+table tr td img {
+    width: 15vw;
+    height: auto;  
+}
+.grayscale { filter: grayscale(100%)}
+.sepia { filter: sepia(100%)}
+.blur { filter: blur(2.5px)}
+.invert { filter: invert(100%) }
+.opacity { filter: opacity(50%)}
+.saturate { filter: saturate(6)}
+.contrast { filter: contrast(190%)}
+.brightness { filter: brightness(200%);}
+.hue-rotate { filter: hue-rotate(180deg)}
+.drop-shadow { filter: drop-shadow(8px 8px 10px blue);}
+
+
+
+/**************************************************************************/
+
+
+
+/** Flip an Image **/
+.flip-horizontally:hover {
+    transform:scaleX(-1);
+}
+.flip-vertically:hover {
+    transform:scaleY(-1);
+}
+.flip-both:hover {
+    transform: scale(-1,-1);
+}
+
+
+
+/**************************************************************************/
+
+
+
+/** Image Hover Overlay **/
+
+.OverlayFlex {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.OverlayContainer {
+    border: 0;
+    box-shadow: 0 0 5px 0 greenyellow;
+    position: relative;
+    width: 20%;
+}
+.OverlayContainer > img {
+    border: 0;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
+}
+.OverlayTextContainer  {
+    border: 0;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transition: 0.5s ease;
+}
+.Ovelaytext {
+    border-radius: 20%;
+    background-color: #92c6f7;
+    color: #000;
+    font-size: 2em;
+    padding: 10px 10px;
+    text-align: center;
+  }
+.OverlayContainer:hover {
+    box-shadow: 0 0px 16px 2px greenyellow, 0 0px 22px 5px rgb(47, 196, 255);
+}
+.OverlayContainer:hover img  {
+    opacity: 0.3;
+}
+.OverlayContainer:hover .OverlayTextContainer {
+    opacity: 1;
+}
+
+
+

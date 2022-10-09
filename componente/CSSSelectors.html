@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSSSelectors.css">
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+
+
+    <h3>1. Universal selector</h3>
+    <p>Selecteaza toate elementele</p>
+    <img src="/media/UniversalselectorPic.JPG" alt="UniversalselectorPic" style="height: 60px;; width: 200px">
+
+
+    <h3>2. element Selectors</h3>
+    <p>Element Selector selecteaza elementul sau elementele de acelasi tip html de pe pagina web pentru a le stiliza.</p>
+    <img src="/media/selectorElement.JPG" alt="selectorElement" style="height: 60px;; width: 200px">
+    <p>Putem avea group selectors pentru a aplicat acelasi stil la mai multe elemente html.</p>
+    <img src="/media/groupSelectors.JPG" alt="groupSelectors" style="height: 60px;; width: 200px">
+
+
+
+    <h3>4. id selector</h3>
+    <p id="selectorID">
+        Selectorul de tip id foloseste atributul id al unui element HTML pentru a selecta un anumit element.<br>
+        Id-ul unui element este unic intr-o pagina.
+    </p>
+    <img src="/media/selectorIDDeclarat.JPG" alt="electorIDDeclarat" style="height: 60px;; width: 200px"> <span> <img src="/media/selectorIDPic.JPG" alt="selectorIDPic" style="height: 60px;; width: 200px"></span>
+
+
+
+    <h3>3. class selector</h3>
+    <p class="paragraf-verde">
+        Selectorul de tip clasa selecteaza elementele in functie de continutul atributului lor de clasa. 
+    </p>
+    <img src="/media/selectorClass2.JPG" alt="selectorClass2" style="height: 60px;; width: 200px"> <span> <img src="/media/selectorClass1.JPG" alt="selectorClass1" style="height: 60px;; width: 200px"></span>
+    <p class="p-violet p-centru font-mare">
+        Putem avea mai multe clase pe un element html.
+    </p>
+    <img src="/media/multeClase1.JPG" alt="multeClase1" style="height: 100px; width: 300px;"> <span> <img src="/media/multeClase2.JPG" alt="multeClase2" style="height: 200px;; width: 250px"></span>
+   
+
+
+    <h3>4. Combinators CSS </h3>
+    <p>Un selector CSS poate contine mai mult de un selector simplu printre care putem include un combinator.</p>
+    <p>Avem patru combinatoare diferite in CSS:</p>
+    <ol>
+        <li>
+            descendant selector: selecteaza toate elementele/copii, nepotii si stranepotii al elementului parinte specific<br>
+            <img src="/media/descendantSelector1.JPG" alt="descendantSelector1" style="height: 150px; width: 250px;"> 
+            <span> <img src="/media/descendantSelector2.JPG" alt="descendantSelector2" style="height: 150px;; width: 350px"></span>
+
+        </li>
+        <li>
+            child selector: selecteaza doar copii directi ai elementului parinte specific<br>
+            <img src="/media/ChildSelector.JPG" alt="ChildSelector" style="height: 100px; width: 350px;">
+            <span><img src="/media/ChildSelector2.JPG" alt="" style="height: 100px; width: 350px;"></span>
+            <br> 
+            <a href="#vedemExemplu">vedem rezultatul html la exemplu 2</a>
+        </li>
+        <li>
+            adjacent sibling selector: este folosit pentru a selecta un element care se afla direct dupa un alt element specific.<br>
+            <img src="/media/adjacentSiblingSelector.JPG" alt="adjacentSiblingSelector" style="height: 100px; width: 350px;">
+            <br> 
+            <a href="#vedemRezultat">vedem rezultatul aici</a>
+        </li>
+        <li>
+            general sibling selector: selecteaza toate elementele care sunt urmatorii frati ai unui element specificat.<br>
+            <img src="/media/generalSiblingSelector.JPG" alt="generalSiblingSelector" style="height: 100px; width: 350px;">
+            <br> 
+            <a href="#vedemRezultat2">vedem rezultatul aici</a>
+        </li>
+    </ol>
+
+
+    <h2>exemplu 1</h2>
+    <div class="parinte">
+        parinte
+        <div class="copil">
+            copil
+            <div class="nepot">
+                nepot
+                <div class="stranepot">
+                    stranepot
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h2 id="vedemExemplu">exemplu 2</h2>
+        <div class="container1">
+            <p>1 copil direct la "container1"</p>
+            <p>2 copil direct al "container1"</p>
+
+            <section class="sectiunea1">
+                3 copil direct al "container1"
+                <p>
+                    1 copil direct la "sectiunea1"
+                </p>
+                <p>
+                    2 copil direct la "sectiunea1"
+                </p>
+                <div class="container2">
+                    3 copil direct la "sectiunea1" 
+                    <p>
+                        1 copil direct la "container2"
+                    </p>
+                </div>
+
+            </section>
+            <div class="container3" id="vedemRezultat2">
+                4 copil direct la "container1"
+                <p>
+                    1 copil direct la "container3"
+                </p>
+            </div>
+            <div class="container4">
+                5 copil direct la "container1"
+                <p>
+                    1 copil direct la "container4"
+                </p>
+            </div>
+        </div>
+
+        <p id="vedemRezultat">Elementele gemene trebuie sa aiba acelasi element parinte, iar „adiacent” inseamna „imediat urmator”.</p>
+    
+
+    <h3>5. Pseudo-class selectors</h3>
+    <p>Pseudo-class selectors sunt folositi pentru a defini o stare speciala a unui element.</p>
+    <h2> :first-child</h2>
+    <p>Aceasta selecteaza primul copil al unui alt element. <span><img src="/media/firstChildPic.JPG" alt="" style="height: 150px;; width: 350px"></span> </p>
+    <h2> :last-child </h2>
+    <p>Aceasta selecteaza ultimul copil al unui alt element.<span><img src="/media/lastChild.JPG" alt="" style="height: 150px;; width: 350px"></span> </p>
+    <h2> :nth-child(n) </h2>
+    <p>
+        Aceasta selecteaza al n-lea copil al părintelui său.<br>
+        n poate fi un nr., cuvânt cheie sau o formula.
+    <span><img src="/media/nthChild.JPG" alt=""style="height: 150px;; width: 350px"></span>  <span><img src="/media/nthChild2nd.JPG" alt="" style="height: 150px;; width: 350px"></span></p>
+
+    <div class="container5">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+    </div>
+    
+    <h2> :hover </h2>
+    <p>- este folosit pentru a selecta elemente atunci cand glisam cu mouse-ul peste ele.
+    <span><img src="/media/exempluHover.JPG" alt="" style="height: 100px;; width: 500px"></span> </p>
+    <h2> :focus </h2>
+    <p>- este declansat atunci cand utilizatorul face clic, atinge sau il selecteaza de la tastataura.
+    <span><img src="/media/exempluFocus.JPG" alt="" style="height: 100px;; width: 300px"></span> </p>
+    
+     <a href="https://www.youtube.com/?hl=RO" target="_blank">
+        <button>vezi un clip pe youtube</button>
+      </a> 
+
+    <h3>6. Pseudo-elements selectors</h3>
+    <p>Pseudo-elements selectors sunt folositi pentru a aplica un anumit stil unei parti specifice a unui element.</p>
+    <h2> ::before </h2>
+    <p>- folosit pentru a introduce un anumit continut inaintea continutului unui element.
+        <span><img src="/media/InainteSiDupa1.JPG" alt="" style="height: 300px;; width: 500px"></span>
+    </p>
+    <h2> ::after </h2>
+    <p>- folosit pentru a introduce un anumit continut dupa continutul unui element.
+        <span><img src="/media/InainteSiDupa2.JPG" alt="" style="height: 300px; width: 500px"></span>
+    </p>
+    <h2> ::first-line </h2>
+    <p>- folosit pentru a adauga un stil la prima linie a unui text.
+        <span><img src="/media/firstLine.JPG" alt="" style="height: 100px;; width: 300px"></span>
+    </p>
+    <h2> ::selection </h2>
+    <p>- folosim pentru marcarea unei portiuni a unui element care este selectata de un utilizator.
+        <span><img src="/media/selection.JPG" alt="" style="height: 100px;; width: 300px"></span>
+    </p>
+    <h2 class="InainteSiDupa">Pseudo-elements</h2>
+    <p class="Alte-Elemente">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ratione sit ab eligendi, neque tenetur expedita<br>
+        suscipit temporibus illo alias laborum ipsum facilis corporis accusamus error blanditiis optio? Sint, suscipit.
+    </p>
+    
+
+    <h3>7. Attribute selectors</h3>
+    <p>- selecteaza elemente pe baza unui atribut sau a valorii unui atribut</p>
+    <img src="/media/AttributeSelectors.JPG" alt="" style="height: 350px;; width: 250px">
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li class="a">Lorem ipsum dolor sit amet.</li>
+        <li class="ab">Lorem ipsum dolor sit amet.</li>
+        <li class="abc">Lorem ipsum dolor sit amet.</li>
+        <li class="bcd">Lorem ipsum dolor sit amet.</li>
+        <li class="bcde">Lorem ipsum dolor sit amet.</li>
+    </ul>
+
+        
+</body>
+</html>

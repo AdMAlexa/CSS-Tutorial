@@ -1,0 +1,76 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: bisque;
+    width: 100vw;
+    height: 100vh;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    padding: 1em;
+}
+.cutieNavbar {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: black;
+    border: 2px dotted black;
+    background-color: lightblue;
+    text-transform: uppercase;
+}
+.cutieSectiuneContinut {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    top: 20%;
+}
+.ContinutUnu, .ContinutDoi, .ContinutTrei {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    border: 2px dotted black;
+    background-color: aquamarine;
+}
+.ContinutUnu h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.ContinutDoi h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.ContinutTrei h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.cutieFooter {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: black;
+    border: 2px dotted black;
+    background-color: lightslategray;
+    text-transform: uppercase;
+}

@@ -1,0 +1,104 @@
+h1 {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+
+
+
+/** px  **/
+
+.container1 {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+
+/*****************************************************************/
+
+
+/**  rem  **/
+
+html {
+    font-size: 10px;
+}
+
+/** 1rem = 10px **/
+
+div {
+    width: 10rem;
+    height: 10rem;
+    background-color: aquamarine;
+}
+
+
+/*****************************************************************/
+
+
+/**  em  **/
+
+body {
+    font-size: 20px;
+}
+
+.container2 {
+    font-size: 5em;
+}
+
+
+/*****************************************************************/
+
+
+/** % (percent) **/
+
+.container3 {
+    width: 20rem;
+    height: 20rem;
+    background-color:rgb(255, 224, 47);
+}
+.copil-container3 {
+    width: 60%;
+    height: 60%;
+    background-color: aquamarine;
+}
+/** "copil-container3" va avea 60% din parinte adica "container3" **/
+
+
+
+/*****************************************************************/
+
+
+/** view height si view width **/
+
+.container4 {
+    width: 100vw;
+    height: 100vh;
+    background-color: bisque;
+}
+.copil-container4 {
+    width: 50%;
+    height: 50%;
+    background-color: aquamarine;
+}
+
+
+
+/*****************************************************************/
+
+
+/** view min si view max **/
+
+.container5 {
+    width: 50vmax;
+    height: 50vmax;
+    background-color: bisque;
+
+}
+
+.copil-container5 {
+    width: 50vmin;
+    height: 50vmin;
+    background-color: aquamarine;
+
+}

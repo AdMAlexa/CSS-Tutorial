@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSSImages.css">
+</head>
+<body>
+    <h1>Styling Images in CSS</h1>
+
+    <h2>Backgroung image</h2>
+    <p>folosim un backgoung image pe &lt;body&gt;</p>
+    <img src="/media/backgroundImage.JPG" alt="">
+
+    <h2>Rounded corner images</h2>
+    <div class="container">
+        <div><img src="/media/roundedCorner.JPG" alt=""></div>
+        <div><img class="RoundedCorner" src="/media/copac.jpg" alt=""></div>
+    </div>
+
+    <h2>Rounded image</h2>
+    <div class="container">
+        <div><img src="/media/roundedImage.JPG" alt=""></div>
+        <div><img class="roundedImage" src="/media/copac.jpg" alt=""></div>
+    </div>
+    
+   <h2>Link as Thumbnail image</h2>
+   <div class="container">
+        <div><img src="/media/thumbnailLink.JPG" alt=""></div>
+        <div>
+            <a href="/media/copac.jpg" target="_blank">
+                <img class="thumbnailImage"  src="/media/copac.jpg" alt="">
+            </a>
+        </div>
+    </div>
+    
+    <h2>Text on images</h2>
+    <div class="TextOnImage">
+        <img src="/media/shark.jpg" alt="">
+        
+        <div class="stangaSus">Text stanga sus</div>
+        <div class="dreaptaSus">Text dreapta sus</div>
+        <div class="dreaptaJos">Text dreapta jos</div>
+        <div class="stangaJos">Text stanga jos</div>
+        <div class="textCentru">Text in centru</div>
+     
+    </div>
+
+<h2 id="opacitate" >Responsive image</h2>
+<p>Responsive image folosim tot timpul, jucandu-ne un pic cu valorile proprietatilor</p>
+<img class="resposiveImage" src="/media/Onegalaxy.jpg" alt="">
+    
+
+<h2>Center an image</h2>
+<p>cea mai buna practica ar fi sa folosim display:flex; dar in acest exemplu am folosit o alta metoda</p>
+<div class="CenerImage">   
+    <img src="/media/emoji.jpg" alt="">
+</div>
+
+<h2>Cards</h2>
+<div class="cardFlex">
+
+    <div class="cards">
+        <img src="/media/JamesBond.jpg" alt="">
+        <div class="CardText">
+            <p>Card Text</p>
+        </div>
+    </div>
+
+    <div class="cards">
+        <img src="/media/emoji.jpg" alt="">
+        <div class="CardText">
+            <p>Card Text</p>
+        </div>
+    </div>
+
+    <div class="cards">
+        <img src="/media/Pinocchio.jpg" alt="">
+        <div class="CardText">
+            <p>Card Text</p>
+        </div>
+    </div>
+</div>
+
+
+<a href="#opacitate" title="vedem Responsive image"><h2>Transparent image</h2></a>
+
+
+<h2>Filters on image</h2>
+    <table>
+        <tr>
+            <td><img class="grayscale" src="/media/shark.jpg" alt=""></td>
+            <td><img class="sepia" src="/media/shark.jpg" alt=""></td>
+            <td><img class="blur" src="/media/shark.jpg" alt=""></td>
+            <td><img class="invert" src="/media/shark.jpg" alt=""></td>
+            <td><img class="opacity" src="/media/shark.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <td><img class="saturate" src="/media/shark.jpg" alt=""></td>
+            <td><img class="contrast" src="/media/shark.jpg" alt=""></td>
+            <td><img class="brightness" src="/media/shark.jpg" alt=""></td>
+            <td><img class="hue-rotate" src="/media/shark.jpg" alt=""></td>
+            <td><img class="drop-shadow" src="/media/shark.jpg" alt=""></td>
+        </tr>
+    </table>
+
+
+
+<h2>Flip an Image</h2>
+
+<table>
+    <tr>
+        <td><img class="flip-horizontally" src="/media/shark.jpg" alt=""></td>
+        <td><img class="flip-vertically" src="/media/shark.jpg" alt=""></td>
+        <td><img class="flip-both" src="/media/shark.jpg" alt=""></td>
+    </tr>
+</table>
+
+
+<h2>Image Hover Overlay</h2>
+
+<div class="OverlayFlex">
+
+    <div class="OverlayContainer">
+        <img class="OverlayImage" src="/media/JamesBond.jpg" alt="">
+        <div class="OverlayTextContainer">
+            <div class="Ovelaytext" >James Bond</div>
+        </div>
+    </div>
+
+    <div class="OverlayContainer">
+        <img class="OverlayImage" src="/media/emoji.jpg" alt="">
+        <div class="OverlayTextContainer">
+            <div class="Ovelaytext" >emoji</div>
+        </div>
+    </div>
+
+    <div class="OverlayContainer">
+        <img src="/media/Pinocchio.jpg" alt="">
+        <div class="OverlayTextContainer">
+            <div class="Ovelaytext">Pinocchio</div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

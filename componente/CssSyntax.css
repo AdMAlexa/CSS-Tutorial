@@ -1,0 +1,25 @@
+/** Syntax **/
+/**
+Selectorul {
+    proprietate: valoare;
+}
+**/
+
+
+body {
+    font-size: 25px;
+    background-color: rgb(201, 119, 119);
+}
+
+h1 {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-bottom: 2px solid greenyellow;
+}
+
+p {
+    margin-left: 25px;
+    background-color: rgb(115, 115, 202);
+    border: 10px solid rgb(255, 251, 0);
+}

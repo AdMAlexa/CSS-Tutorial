@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="AtRules.css">
+</head>
+<body>
+    <section class="sectiuneaUnu">
+        <h1>CSS @Rules</h1>
+
+
+    <h3>@font-face: pentru acest exemplu am descarcat GemunuLibre fonts <br>
+        <a href="https://fonts.google.com/"  target="_blank"><img src="/media/googlefonts.JPG" alt="" style="height: 25; width: 95;"></a></h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente hic esse dolorum autem, aut accusantium suscipit vero tempore quaerat, et ut dolorem? Fugit ratione optio ullam fuga sunt, expedita officia totam blanditiis consequatur rerum necessitatibus iusto aspernatur nihil quo atque doloremque tempora dignissimos corrupti modi ex architecto fugiat magnam delectus.</p>
+    
+
+    <h3 class="header3">@import: pentru acest exemplu am importat Carter One fonts <br>
+        <a href="https://fonts.google.com/"  target="_blank"><img src="/media/googlefonts.JPG" alt="" style="height: 25; width: 95;"></a></h3>
+    <p class="paragrafP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente hic esse dolorum autem, aut accusantium suscipit vero tempore quaerat, et ut dolorem? Fugit ratione optio ullam fuga sunt, expedita officia totam blanditiis consequatur rerum necessitatibus iusto aspernatur nihil quo atque doloremque tempora dignissimos corrupti modi ex architecto fugiat magnam delectus.</p>
+    <a href="#keyframe"><h3>@keyframes</h3></a>
+    <div class="cutie">
+        <div class="cutie2">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    </section>
+
+
+    
+    <section class="sectiuneaDoi" id="keyframe">
+        <div class="bkContainer">
+            <div class="miscareBK"></div>
+        </div>
+        <div class="train-container">
+            <img class="TrainImg" src="/media/TrainTransparentBk.png" alt="">
+        </div>
+    </section>
+
+
+
+
+    <section class="sectiuneatrei">
+
+        <h3>@media</h3>
+        <p>prima regula @media este daca ajustam ecranul sup 700px avem background si text color schimbate </p>
+        <p>intre 700px si 1000px avem stylul implicit declarat</p>
+        <p>a doua regula @media este daca ajustam ecranul peste 1150px atunci avem alt background si text color  </p>
+        <img src="/media/RegulaMediaquerry.JPG" alt="">
+
+
+        <h3 id="nameSpace">@namespace</h3>
+
+        <p>
+            <a href="#nameSpace">Acesta este un link obijnuit HTML</a>
+        </p>
+
+        <svg class="anotherLink" width="500px" height="200px" viewBox="0 0 500 100">
+            <defs>
+                <path id="OneDirection"
+                stroke="red"
+                d="M 10,90 Q 100,15 200,70 Q 340,140 400,30"
+                />
+            </defs>
+            
+            <a href="#nameSpace">
+                <text x="120" y="100" fill="blueviolet">
+                    <textPath href="#OneDirection">Acesta este un link creat in SVG</textPath>
+                </text>
+            </a>
+        </svg>
+        <!-- <svg width="500px" height="100px" viewBox="0 0 500 100" xmlns="#nameSpace">
+            <a href="#nameSpace">
+                <text x="100" y="50" dx="-20">
+                    Acesta este un link creat in SVG
+                </text>
+            </a>
+        </svg> -->
+    </section>
+    <section class="sectiunepatru">
+        <h3>@page</h3>
+        <h3>pentru a vedea regula @page declarata click dreapta in pagina si alegem print</h3>
+        <img src="/media/ATpageRule.JPG" alt="">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, error veritatis nam,
+            quia optio libero minus quaerat consectetur porro quo distinctio illum autem. Ut optio
+            repudiandae aut officiis similique, consequatur illum ipsa suscipit ipsum voluptatem amet
+            provident expedita quam ullam, non deleniti animi nisi iure, nam fugit modi? Nobis, asperiores!
+        </p>
+    </section>
+    
+</body>
+</html>

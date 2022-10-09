@@ -1,0 +1,54 @@
+/**  utilizam un set de reguli prin eliminarea setariile implicite a browserului web **/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+
+/****************************************************************************************/
+
+
+
+}
+body {
+    background-color: bisque;
+    font-size: 20px;
+}
+h1 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+h2 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+
+
+/****************************************************************************************/
+
+
+
+/** Exemplu Tabel borders, size, color, style and alignment **/
+
+section * {
+    color: bisque;
+    border: 3px solid yellowgreen;
+    width: 100vw;
+    height: auto;
+    text-align: center;
+}
+section > table {
+    background-image: url(/media/Onegalaxy.jpg);
+}
+
+section tr:hover {
+    background-color: brown;
+    opacity: 0.9;
+}
+section td:hover {
+    font-size: 1.2em;
+    color:blue;
+}

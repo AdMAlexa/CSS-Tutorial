@@ -1,0 +1,36 @@
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+h3 {
+    margin-left: 20px;
+}
+
+p, ol, ul, dl, li {
+    margin-left: 30px;
+}
+
+.boxFlex {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px;
+}
+a {
+    font-size: 20px;
+    font: 900;
+    text-decoration: overline underline dashed;
+}
+a:hover {
+    color: firebrick;
+    background: yellowgreen;
+}

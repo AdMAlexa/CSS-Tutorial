@@ -1,0 +1,81 @@
+/**  utilizam un set de reguli prin eliminarea setariile implicite a browserului web **/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/****************************************************************************************/
+
+
+body {
+    background-color: bisque;
+    font-size: 20px;
+}
+h1 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+
+
+/****************************************************************************************/
+
+table * {
+    background-color: aqua;
+    border-radius: 25%;
+}
+
+table {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border: 2px solid black;
+}
+table tr td {
+    width: 100vw;
+    height: auto;
+    border: 2px solid black; 
+}
+p:hover {
+    font: 600;
+    color: red;
+}
+
+
+
+
+/****************************************************************************************/
+
+.help { cursor: help; }
+.pointer { cursor: pointer; }
+.progress { cursor: progress; }
+.wait { cursor: wait; }
+.cell { cursor: cell; }
+.text { cursor: text; }
+.vertical-text { cursor: vertical-text; }
+.alias { cursor: alias; }
+.move { cursor: move; }
+.no-drop { cursor: no-drop; }
+.not-allowed { cursor: not-allowed; }
+.grab { cursor: grab; }
+.grabbing { cursor: grabbing; }
+.all-scroll { cursor: all-scroll; }
+.col-resize { cursor: col-resize; }
+.row-resize { cursor: row-resize; }
+.n-resize { cursor: n-resize; }
+.e-resize { cursor: e-resize; }
+.s-resize { cursor: s-resize; }
+.w-resize { cursor: w-resize; }
+.ne-resize { cursor: ne-resize; }
+.nw-resize { cursor: nw-resize; }
+.se-resize { cursor: se-resize; }
+.sw-resize { cursor: sw-resize; }
+.ew-resize { cursor: ew-resize; }
+.ns-resize { cursor: ns-resize; }
+.nesw-resize { cursor: nesw-resize; }
+.nwse-resiz { cursor: nwse-resize; }
+.zoom-in { cursor: zoom-in; }
+.zoom-out { cursor: zoom-out; }

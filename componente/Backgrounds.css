@@ -1,0 +1,264 @@
+
+/** proprietataea background-color **/
+.container1 {
+    width: 500px;
+    height: 500px;
+    border: 5px dotted red;
+    background-color: aqua;
+}
+
+
+
+/*********************************************************************************/
+
+
+
+/**  RGBA pentru transparenta **/
+.op1 {
+    width: 100px;
+    height: 100px;
+    border: 2px dotted red;
+    background-color: rgba(0, 255, 255, 1);
+    display: inline-block;
+}
+.op2 {
+    width: 100px;
+    height: 100px;
+    border: 2px dotted red;
+    background-color: rgba(0, 255, 255, 0.6);
+    display: inline-block;
+}
+.op3 {
+    width: 100px;
+    height: 100px;
+    border: 2px dotted red;
+    background-color: rgba(0, 255, 255, 0.3);
+    display: inline-block;
+}
+.op4 {
+    width: 100px;
+    height: 100px;
+    border: 2px dotted red;
+    background-color: rgba(0, 255, 255, 0.1);
+    display: inline-block;
+}
+
+
+
+/*********************************************************************************/
+
+
+
+/**  background-image  **/
+.container2 {
+    width: 500px;
+    height: 500px;
+    border: 5px dotted red;
+    background-image: url(/media/emoji.jpg);
+}
+
+
+
+/*********************************************************************************/
+
+
+
+/**  background-repeat  **/
+.container3 {
+    width: 500px;
+    height: 500px;
+    border: 5px dotted red;
+    background-color: aqua;
+    background-image: url(/media/emoji.jpg);
+    background-repeat: no-repeat;
+}
+
+
+
+/*********************************************************************************/
+
+
+
+/** background-size **/
+.container4 {
+    width: 500px;
+    height: 500px;
+    border: 5px dotted red;
+    background-image: url(/media/emoji.jpg);
+    background-size: contain;
+
+}
+
+
+
+/*********************************************************************************/
+
+
+
+/** background-position **/
+.container5 {
+    width: 500px;
+    height: 500px;
+    border: 5px dotted red;
+    background-image: url(/media/emoji.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+
+/*********************************************************************************/
+
+
+
+/** background-attachment **/
+body {
+    background-image: url(/media/emoji.jpg);
+    background-repeat: no-repeat;
+    background-size: 350px;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+
+
+/*********************************************************************************/
+
+
+
+/** background-origin **/
+.origin1 {
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+    border: 50px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 255, 255, 1);
+    background-image: url(/media/emoji.jpg);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-origin: border-box;
+    display: inline-block;
+}
+.origin2 {
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+    border: 50px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 255, 255, 1);
+    background-image: url(/media/emoji.jpg);
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    display: inline-block;
+}
+.origin3 {
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+    border: 50px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 255, 255, 1);
+    background-image: url(/media/emoji.jpg);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-origin: content-box;
+    display: inline-block;
+}
+
+
+
+/*********************************************************************************/
+
+
+
+/** background-clip **/
+.clip1 {
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+    border: 50px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 255, 255, 1);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-clip: border-box;
+    display: inline-block;
+}
+.clip2 {
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+    border: 50px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 255, 255, 1);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-clip: padding-box;
+    display: inline-block;
+}
+.clip3 {
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+    border: 50px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 255, 255, 1);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-clip: content-box;
+    display: inline-block;
+}
+
+
+
+/*********************************************************************************/
+
+
+
+/** backround-blend-mode **/
+.blendmode1 {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-image: url(/media/shark.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-blend-mode: multiply;
+    background-color:darkgreen;
+
+    
+}
+
+.blendmode2 {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-image: url(/media/shark.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-blend-mode: difference;
+    background-color:darkgreen;
+}
+
+.blendmode3 {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-image: url(/media/shark.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-blend-mode: screen;
+    background-color:darkgreen;
+}
+
+.blendmode4 {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-image: url(/media/shark.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-blend-mode: exclusion;
+    background-color:darkgreen;
+}

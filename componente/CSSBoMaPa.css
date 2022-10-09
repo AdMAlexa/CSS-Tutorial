@@ -1,0 +1,30 @@
+/**  utilizam un set de reguli prin eliminarea setariile implicite a browserului web **/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+
+/*******************************************************************************************/
+div {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    justify-content: center;
+}
+
+.box {
+    width: 500px;
+    height: 500px;
+    border: 30px ridge  greenyellow;
+    padding: 50px;
+    margin:100px;
+  }
+
+.continut {
+    margin: auto;
+    justify-content: center;
+    background-color: bisque;
+}
