@@ -192,13 +192,13 @@ p {
     background-color: lightblue;
     text-align: center;
 }
-@media screen and (max-width: 700px) {
+@media (max-width: 700px) {
     .sectiuneatrei {
         background-color: lightcoral;
         color:blue;
     }
 }
-@media screen and (min-width: 1150px) {
+@media (min-width: 1150px) {
     .sectiuneatrei {
         background-color: lightskyblue;
         color: red;    }
